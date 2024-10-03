@@ -44,7 +44,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://personal-health.onrender.com/predict/', formData);
+      const response = await axios.post('https://mental-health-full-1.onrender.com/predict/', formData);
       setResult(response.data.message);
       console.log(response.data.message)
       navigateToPage(response.data.message); 
